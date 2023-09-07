@@ -1,0 +1,22 @@
+server:
+  port: 40000
+
+logging:
+  level:
+    root: info
+
+spring:
+  application:
+    name: z2huo-spring-cloud-eureka-server
+
+eureka:
+  instance:
+    appname: localhost
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.appname}:${server.port}
+
