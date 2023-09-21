@@ -7,6 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>cn.z2huo</groupId>
     <artifactId>z2huo-spring-cloud-eureka-server</artifactId>
     <packaging>jar</packaging>
 

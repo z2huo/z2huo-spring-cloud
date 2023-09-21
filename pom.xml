@@ -70,7 +70,8 @@
   </build>
 
   <modules>
-    <module>z2huo-spring-cloud-eureka</module>
+    <module>z2huo-spring-cloud-eureka-server</module>
+    <module>z2huo-spring-cloud-eureka-client</module>
   </modules>
 
   <repositories>
