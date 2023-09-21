@@ -1,0 +1,13 @@
+server:
+  port: 10500
+
+spring:
+  application:
+    name: z2huo-spring-cloud-eureka-client
+
+eureka:
+  client:
+    service-url:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://localhost:10000/eureka

@@ -7,10 +7,11 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>z2huo-spring-cloud-eureka</artifactId>
+    <groupId>cn.z2huo</groupId>
+    <artifactId>z2huo-spring-cloud-eureka-client</artifactId>
     <packaging>jar</packaging>
 
-    <name>z2huo-spring-cloud-eureka</name>
+    <name>z2huo-spring-cloud-eureka-client</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,7 +21,7 @@
         <!-- eureka server 依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 
