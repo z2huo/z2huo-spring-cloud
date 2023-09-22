@@ -6,8 +6,10 @@ spring:
     name: z2huo-spring-cloud-eureka-client
 
 eureka:
+  instance:
+    appname: localhost
   client:
     service-url:
       register-with-eureka: true
       fetch-registry: true
-      defaultZone: http://localhost:10000/eureka
+      defaultZone: http://localhost:10000/eureka/
