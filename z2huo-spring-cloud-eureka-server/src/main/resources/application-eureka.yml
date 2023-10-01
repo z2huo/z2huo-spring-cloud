@@ -1,0 +1,17 @@
+server:
+  port: 10001
+
+eureka:
+  instance:
+    app-name: eureka-server-1
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    # 自我保护机制
+    enable-self-preservation: true
+  client:
+    # 不向注册中心注册自己
+    register-with-eureka: false
+    # 自己是注册中心，职责是维护服务示例，不需要检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka-server-2:10002/eureka/,http://eureka-server-3:10003/eureka/
