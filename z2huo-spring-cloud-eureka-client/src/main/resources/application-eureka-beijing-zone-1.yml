@@ -1,0 +1,31 @@
+eureka:
+  instance:
+    app-name: eureka-client
+    instance-id: eureka-client-${server.port}-${random.value}
+    metadata-map:
+      zone: zone-1
+    # 访问路径可以显示IP地址
+    prefer-ip-address: false
+    status-page-url-path: /info
+    health-check-url-path: /health
+    # 服务续约时间
+    lease-renewal-interval-in-seconds: 30
+    # 服务失效时间
+  #    lease-expiration-duration-in-seconds: 90
+
+  client:
+    region: beijing
+    availability-zones:
+      beijing: zone-1
+    # 禁止该client被注册，跟注册中心脱离关系
+    enabled: true
+    # 健康检查
+    healthcheck:
+      enabled: true
+    # 是否允许获取注册表信息
+    fetch-registry: true
+    # 缓存的服务注册信息定期更新时间间隔
+    registry-fetch-interval-seconds: 40
+    service-url:
+      zone-1: http://eureka-server-1:10001/eureka/,http://eureka-server-2:10002/eureka/,http://eureka-server-3:10003/eureka/
+      zone-2: http://eureka-server-4:10004/eureka/

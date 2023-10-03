@@ -1,0 +1,26 @@
+server:
+  port: 10005
+
+eureka:
+  instance:
+    app-name: eureka-server
+    instance-id: eureka-server-${random.value}
+    prefer-ip-address: false
+    metadata-map:
+      zone: zone_1
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    # 自我保护机制
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 70000
+  client:
+    region: shanghai
+    availability-zones:
+      shanghai: zone_1
+    prefer-same-zone-eureka: true
+    # 是否向注册中心注册自己
+    register-with-eureka: false
+    # 自己是注册中心，职责是维护服务示例，不需要检索服务
+    fetch-registry: false
+    service-url:
+      zone_1: http://eureka-server-5:10005/eureka/

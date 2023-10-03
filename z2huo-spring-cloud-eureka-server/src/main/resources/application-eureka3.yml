@@ -3,15 +3,29 @@ server:
 
 eureka:
   instance:
-    app-name: eureka-server-3
+    app-name: eureka-server
+    instance-id: eureka-server-${server.port}-${random.value}
+    metadata-map:
+      zone: zone-1
+    hostname: eureka-server-3
+    prefer-ip-address: false
+    ip-address: 192.168.0.101
   server:
     waitTimeInMsWhenSyncEmpty: 0
     # 自我保护机制
     enable-self-preservation: true
+    eviction-interval-timer-in-ms: 70000
   client:
-    # 不向注册中心注册自己
+    region: beijing
+    availability-zones:
+      beijing: zone-1,zone-2
+#      beijing: zone-1
+    prefer-same-zone-eureka: true
+    # 是否向注册中心注册自己
     register-with-eureka: false
-    # 自己时注册中心，职责是维护服务示例，不需要检索服务
+    # 自己是注册中心，职责是维护服务示例，不需要检索服务
     fetch-registry: false
     service-url:
-      defaultZone: http://eureka-server-1:10001/eureka/,http://eureka-server-2:10002/eureka/
+#      defaultZone: http://eureka-server:10001/eureka/,http://eureka-server:10002/eureka/
+      zone-1: http://eureka-server-1:10001/eureka/,http://eureka-server-2:10002/eureka/,http://eureka-server-3:10003/eureka/
+      zone-2: http://eureka-server-4:10004/eureka/

@@ -6,37 +6,10 @@ spring:
     name: z2huo-spring-cloud-eureka-client
   cloud:
     discovery:
-      # 禁止该client被发现
+      # 该client是否可以进行注册和发现
       enabled: true
-
-eureka:
-  instance:
-    app-name: eureka-client
-    instance-id: eureka-client-${random.value}
-    # 访问路径可以显示IP地址
-    prefer-ip-address: true
-    status-page-url-path: /info
-    health-check-url-path: /health
-    # 服务续约时间
-    lease-renewal-interval-in-seconds: 30
-    # 服务失效时间
-#    lease-expiration-duration-in-seconds: 90
-
-  client:
-    # 禁止该client被发现
-    enabled: true
-    # 健康检查
-    healthcheck:
-      enabled: true
-    # 是否允许获取注册表信息
-    fetch-registry: true
-    # 缓存的服务注册信息定期更新时间间隔
-    registry-fetch-interval-seconds: 40
-    service-url:
-      register-with-eureka: true
-      fetch-registry: true
-#      defaultZone: http://localhost:10000/eureka/
-      defaultZone: http://eureka-server-1:10001/eureka/,http://eureka-server-2:10002/eureka/,http://eureka-server-3:10003/eureka/
+  profiles:
+    active: eureka-default
 
 info:
   app.name: spring-cloud-eureka-client
