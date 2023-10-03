@@ -102,6 +102,7 @@
     <module>z2huo-spring-cloud-eureka-client</module>
     <module>z2huo-spring-cloud-eureka-client-provider</module>
     <module>z2huo-spring-cloud-eureka-client-consumer</module>
+    <module>z2huo-spring-cloud-common</module>
   </modules>
 
   <repositories>
