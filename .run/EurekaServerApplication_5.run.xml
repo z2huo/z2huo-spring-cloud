@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="EurekaServerApplication_5" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="eureka-server">
     <envs>
-      <env name="spring.profiles.include" value="eureka5" />
+      <env name="spring.profiles.active" value="eureka5" />
     </envs>
     <module name="z2huo-spring-cloud-eureka-server" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="cn.z2huo.springcloud.netflix.eureka.server.EurekaServerApplication" />
