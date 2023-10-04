@@ -4,10 +4,11 @@ server:
 eureka:
   instance:
     app-name: eureka-server
-    instance-id: eureka-server-${random.value}
+    instance-id: eureka-server-${server.port}-${random.value}
     prefer-ip-address: false
     metadata-map:
       zone: zone_1
+    hostname: eureka-server-5
   server:
     waitTimeInMsWhenSyncEmpty: 0
     # 自我保护机制
