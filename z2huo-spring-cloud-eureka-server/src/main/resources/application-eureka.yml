@@ -3,7 +3,6 @@ server:
 
 eureka:
   instance:
-    app-name: eureka-server
     instance-id: eureka-server-${server.port}-${random.value}
     metadata-map:
       zone: zone-1

@@ -3,7 +3,6 @@ server:
 
 eureka:
   instance:
-    app-name: eureka-server
     instance-id: eureka-server-${server.port}-${random.value}
     prefer-ip-address: false
     metadata-map:

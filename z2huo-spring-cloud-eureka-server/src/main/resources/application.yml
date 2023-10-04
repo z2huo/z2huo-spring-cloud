@@ -7,6 +7,6 @@ server:
 
 spring:
   application:
-    name: z2huo-spring-cloud-eureka-server
+    name: eureka-server
   profiles:
     active: eureka-default

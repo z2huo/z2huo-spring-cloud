@@ -1,6 +1,5 @@
 eureka:
   instance:
-    app-name: eureka-server
     instance-id: eureka-server-${server.port}-${random.value}
     # 服务失效时间
     lease-expiration-duration-in-seconds: 90

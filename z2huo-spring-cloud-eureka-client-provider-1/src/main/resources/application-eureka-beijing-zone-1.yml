@@ -1,6 +1,5 @@
 eureka:
   instance:
-    app-name: eureka-client-provider-1
     instance-id: eureka-client-provider-1-zone-1-${server.port}-${random.value}
     metadata-map:
       zone: zone-1

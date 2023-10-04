@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: z2huo-spring-cloud-eureka-client-provider-1
+    name: eureka-client-provider-1
   profiles:
     active: eureka-default
 

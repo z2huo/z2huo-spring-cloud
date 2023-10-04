@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: z2huo-spring-cloud-eureka-client
+    name: eureka-client
   cloud:
     discovery:
       # 该client是否可以进行注册和发现
