@@ -1,4 +1,4 @@
-package cn.z2huo.springcloud.netflix.eureka.client.demo;
+package cn.z2huo.springcloud.netflix.eureka.client.provider1;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -14,13 +14,12 @@ import java.util.Arrays;
 @Slf4j
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaClientApplication {
+public class EurekaClientProviderApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(EurekaClientApplication.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(EurekaClientProviderApplication.class, args);
         Environment environment = context.getEnvironment();
         log.info("active profiles contains: {}", Arrays.toString(environment.getActiveProfiles()));
-
         InetAddress local;
         try {
             local = InetAddress.getLocalHost();

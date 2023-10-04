@@ -1,0 +1,13 @@
+server:
+  port: 20100
+
+spring:
+  application:
+    name: z2huo-spring-cloud-eureka-client-provider-1
+  profiles:
+    active: eureka-default
+
+info:
+  app.name: spring-cloud-eureka-client
+  bulid.artifactId: $project.artifactId$
+  bulid.version: $project.version$

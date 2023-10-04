@@ -2,11 +2,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.1.3</version>
-  </parent>
+<!--  <parent>-->
+<!--    <groupId>org.springframework.boot</groupId>-->
+<!--    <artifactId>spring-boot-starter-parent</artifactId>-->
+<!--    <version>3.1.3</version>-->
+<!--  </parent>-->
 
   <name>z2huo-spring-cloud</name>
 
@@ -100,7 +100,8 @@
   <modules>
     <module>z2huo-spring-cloud-eureka-server</module>
     <module>z2huo-spring-cloud-eureka-client</module>
-    <module>z2huo-spring-cloud-eureka-client-provider</module>
+    <module>z2huo-spring-cloud-eureka-client-provider-1</module>
+    <module>z2huo-spring-cloud-eureka-client-provider-2</module>
     <module>z2huo-spring-cloud-eureka-client-consumer</module>
     <module>z2huo-spring-cloud-common</module>
   </modules>

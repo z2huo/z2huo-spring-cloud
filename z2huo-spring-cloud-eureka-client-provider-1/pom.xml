@@ -8,10 +8,10 @@
     </parent>
 
     <groupId>cn.z2huo</groupId>
-    <artifactId>z2huo-spring-cloud-eureka-client</artifactId>
+    <artifactId>z2huo-spring-cloud-eureka-client-provider-1</artifactId>
     <packaging>jar</packaging>
 
-    <name>z2huo-spring-cloud-eureka-client</name>
+    <name>z2huo-spring-cloud-eureka-client-provider-1</name>
 
     <properties>
     </properties>
