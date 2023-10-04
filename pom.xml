@@ -14,10 +14,11 @@
 
   <groupId>cn.z2huo</groupId>
   <artifactId>z2huo-spring-cloud</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>${z2huo-spring-cloud.version}</version>
   <packaging>pom</packaging>
 
   <properties>
+    <z2huo-spring-cloud.version>0.0.1-SNAPSHOT</z2huo-spring-cloud.version>
     <java.version>17</java.version>
     <!-- 编译时的编码 -->
     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
@@ -44,6 +45,12 @@
         <version>2022.0.4</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>cn.z2huo</groupId>
+        <artifactId>z2huo-spring-cloud-common-core</artifactId>
+        <version>${z2huo-spring-cloud.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
