@@ -1,0 +1,23 @@
+server:
+  port: 20100
+
+spring:
+  application:
+    name: z2huo-spring-cloud-eureka-client-provider
+
+eureka:
+  instance:
+    app-name: localhost
+    instance-id: eureka-client-provider-${server.port}
+    # 访问路径可以显示IP地址
+    prefer-ip-address: true
+  client:
+    service-url:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://localhost:10000/eureka/
+
+info:
+  app.name: spring-cloud-eureka-client
+  bulid.artifactId: $project.artifactId$
+  bulid.version: $project.version$
