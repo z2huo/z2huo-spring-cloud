@@ -5,16 +5,9 @@ logging:
   level:
     root: info
 
-spring:
-  application:
-    name: alibaba-provider-1
-
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-        enabled: true
-#        endpoint: alibaba-provider-1
+project:
+  name: alibaba-nacos-config-demo-native
+  id: nacos-demo-native
 
 management:
   endpoints:

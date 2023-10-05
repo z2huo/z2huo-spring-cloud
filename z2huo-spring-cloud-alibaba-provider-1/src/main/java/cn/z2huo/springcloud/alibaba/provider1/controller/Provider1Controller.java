@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Provider1Controller {
 
-    @Value(value = "${provider.instance.name: provider1}")
+    @Value(value = "${provider.instance.name:provider1}")
     private String instanceName;
 
     @Value(value = "${server.port}")
