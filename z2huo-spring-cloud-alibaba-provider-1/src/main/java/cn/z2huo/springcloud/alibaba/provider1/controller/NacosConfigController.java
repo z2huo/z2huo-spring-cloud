@@ -3,6 +3,7 @@ package cn.z2huo.springcloud.alibaba.provider1.controller;
 import cn.z2huo.springcloud.alibaba.provider1.config.ProjectInfo2Configuration;
 import cn.z2huo.springcloud.alibaba.provider1.config.ProjectInfoConfiguration;
 import cn.z2huo.springcloud.alibaba.provider1.entity.Project;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -43,6 +44,7 @@ public class NacosConfigController {
     }
 
     @GetMapping("/nacosConfig/beanConfig")
+    @SentinelResource("nacosConfigBean")
     public String configMethod4() {
         return project.toString();
     }
