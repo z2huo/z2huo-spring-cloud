@@ -135,6 +135,7 @@
     <module>z2huo-spring-cloud-common</module>
     <module>z2huo-spring-cloud-alibaba-provider-1</module>
     <module>z2huo-spring-cloud-alibaba-consumer-1</module>
+    <module>z2huo-work-2</module>
   </modules>
 
   <repositories>
